@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+body{
+    background: linear-gradient(45deg, lightgreen, skyblue);
+    overflow: hidden;
+}
+
+.page-title {
+    font-family: 'Lobster';
+    text-align: center;
+    font-size: 60px;
+    color: #d64d3f;
+    background: rgb(224 255 255 / 72%);
+    width: 100%;
+    padding: 5px;
+}
+
+.bg-div{
+    position: absolute;
+    top:0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.note i {
+    font-size: 150px;
+    opacity: .05;
+    animation: move 3s  alternate-reverse infinite ;
+}
+.note {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -1;
+    position: relative;
+    margin: 10px;
+}
+
+@keyframes move {
+    0%{
+        margin: 0px;
+    }
+    100%{
+        margin:50px;
+    }
+}
