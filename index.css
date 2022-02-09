@@ -12,6 +12,47 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
 body{
     background: #337def;
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        background: rebeccapurple;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .cloud-container {
+        background: firebrick;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+    .menu-items {
+        background: darkblue;
+        height: 100%;
+        width: 100% !important;
+    }  
+    .menu-items ul {
+        flex-direction: column;
+        height: 100%;
+    }
+    .menu-items a {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-items a:hover {
+        background:rgb(4, 67, 139);
+    }
+    .nav-options{
+        display: block;
+    }
 
 }
 nav {
@@ -19,9 +60,17 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: absolute;
+
     width: 100%;
+    z-index: 1000;
     /* box-shadow: 0 2px 4px 0 rgba(97, 108, 110, 0.349);
     background: rgba(211, 211, 211, 0.319); */
+}
+i{
+    font-size: 40px;
+    position: absolute;
+    top: 3%;
+    right: 5%;
 }
 .nav-logo img {
     height: 80px;
@@ -304,6 +353,76 @@ margin-right: -50%;
     margin: 20px;
     position: absolute;
     bottom: 0;
+}
+#contact-page{
+    height: 100vh;
+}
+.form-container {
+    height: 90%;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container h2{
+    color: #337def;
+}
+.form-container form{
+    height: 100%;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.815);
+    padding: 30px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 18px 6px rgb(255, 239, 11);
+    -moz-box-shadow:    0px 0px 18px 6px rgb(167, 166, 165);
+    box-shadow:         0px 0px 18px 6px rgb(223, 221, 196);
+}
+.contact-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contact-inputs input {
+    margin: 20px;
+    font-size: 15px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-container textarea{
+    height: 60%;
+    width: 100%;
+    padding: 10px;
+}
+.form-container button {
+    margin-top: 30px;
+    background: rgb(255, 255, 168);
+    color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#footer{
+    height: 10vh;
+    background: black;
+    border-top: 1px white solid;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 @keyframes floating {
