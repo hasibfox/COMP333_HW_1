@@ -18,6 +18,21 @@ start.addEventListener("click", () => {
 
     setTimeout(
         function() {
-            overlay.style.display = "block";
-        }, 5000);
+            overlay.setAttribute("style", "display: flex; justify-content:center;align-items:center");
+            overlay.innerHTML = ""
+            var a = document.createElement('a'); 
+                
+            // Create the text node for anchor element.
+            var link = document.createTextNode("Click for Full Version");
+                
+            // Append the text node to anchor element.
+            a.appendChild(link); 
+                
+            // Set the href property.
+            a.href = "https://www.geeksforgeeks.org"; 
+                
+            a.target = "_blank"
+            // Append the anchor element to the body.
+            overlay.appendChild(a);
+        }, 2000);
 })

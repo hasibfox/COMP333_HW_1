@@ -261,7 +261,7 @@ margin-right: -50%;
     justify-content: center;
     align-items: center;
 }
-.iframe-overlay h1 {
+.iframe-overlay h1, a {
     font-size: 200px;
     color: gold;
     font-weight: bolder;
@@ -270,6 +270,9 @@ margin-right: -50%;
     transition: .5s ease all;
     border-radius: 10px;
     padding: 10px;
+}
+.iframe-overlay a {
+    font-size: 100px;
 }
 .iframe-overlay h1:hover {
     background: rgba(255, 255, 224, 0.425);
