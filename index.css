@@ -115,12 +115,16 @@ nav {
     font-size: 25px;
     font-weight: bolder;
     color: white;
-    width: 100%;
+    width: 50%;
     border-radius: 100px;
     padding: 20px;
     background: rgb(238, 222, 0);
     margin-top: 50px;
     border: 1px solid;
+}
+.demo-text a {
+    width: 100%;
+    text-align: right;
 }
 
 .hero-image button:hover{

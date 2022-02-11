@@ -29,7 +29,7 @@ start.addEventListener("click", () => {
             a.appendChild(link); 
                 
             // Set the href property.
-            a.href = "https://www.geeksforgeeks.org"; 
+            a.href = "/musicplayer.html"; 
                 
             a.target = "_blank"
             // Append the anchor element to the body.
