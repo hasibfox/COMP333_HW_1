@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="index.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/425a808d24.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>MP Pro</title>
 </head>
 <body>
-    <nav class="animate__animated animate__fadeInDown">
-        <div class="cloud-container">
-            <i class="fa fa-solid fa-bars"></i>
 
+    <nav class="show" id="nav">
+        <div class="cloud-container">
+            <i class="fa fa-solid fa-bars" id ="burger"></i>
             <div class="cloud">
                 <div class="nav-logo">
                     <img src="./images/mnote.png" />
@@ -34,8 +33,9 @@
                 <a href="#contact-page"> <li>Contact Us</li></a>
             </ul>
         </div>
-        </nav>
-    <!-- <div id="hero-page">
+    </nav> 
+        
+    <div id="hero-page">
         <div class="hero-text animate__animated animate__bounceInLeft">
             <h1> Music Player Pro</h1>
             <h2> A new way to listen to music</h2>
@@ -45,15 +45,16 @@
         <div class="hero-image animate__animated animate__slideInRight">
             <img src="./images/hero-image.svg"/>
         </div>
-    </div>
+    </div>  
+
     <div id="about-page">
         <h1 data-ao="fade-down" class="header-title ">About Us!</h1>
         <p data-ao="fade-up">
             The standard Lorem Ipsum passage, used since the 1500s
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
         </p>
         <div class="awards">
             <div class="award-content" data-ao="flip-left" data-aos-duration="2000">
@@ -72,6 +73,7 @@ Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
         </div>
     </div>
 
+
     <div id="demo-page">
         <h1 data-ao="fade-down" class="header-title ">Demo</h1>
         <div class="demo-contents" data-ao="fade-down-right">
@@ -82,11 +84,16 @@ Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
             <div class="demo-text" data-ao="fade-up-left">
                 <h2>Try The Demo Now!</h2>
                 <button class="try-now"> Click Here! </button>
-    
             </div>
         </div>
-
-    </div>
+        <div class="iframe-container">
+            <div class="iframe-overlay">
+                <h1 class="iframe-start"> START </h1>
+            </div>
+            <iframe src="./musicplayer.html" style="height:100vh;width:100%;" title="musicplayerpage"></iframe>
+        </div>
+    </div>   
+    
     <div id="pricing-page">
         <h1 data-ao="fade-down" class="header-title ">Pricing</h1>
         <div class="pricing-cards">
@@ -157,12 +164,12 @@ Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
         <p style="color: aqua; margin-top: 5px;">
             Mohammad Hasib
         </p>
-    </div> -->
+    </div> 
 
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://kit.fontawesome.com/425a808d24.js" crossorigin="anonymous"></script>
-<script>
-    AOS.init();
-</script>
+<script>AOS.init();</script>
+<script src="index.js"></script>
+
 </html>

@@ -30,6 +30,11 @@ nav {
     top: 5%;
     right: 5%;
     display: none;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+.cloud-container i:hover {
+    filter: brightness(.8);
 }
 .cloud{ 
     margin-top:10px;
@@ -78,7 +83,7 @@ nav {
 .menu-items{
     width: 50%;
 }
-
+/* Hero Page CSS */
 #hero-page{
     height: 100vh;
     display: grid;
@@ -103,13 +108,14 @@ nav {
     font-size: 40px;
     color: rgb(255, 239, 100);
     grid-row: 2;
+    margin-top: 30px;
 }
 .try-now{
     cursor: pointer;
     font-size: 25px;
     font-weight: bolder;
     color: white;
-    width: 30%;
+    width: 50%;
     border-radius: 100px;
     padding: 20px;
     background: rgb(238, 222, 0);
@@ -171,7 +177,7 @@ nav {
 }
 .award-content h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top:10px ;
+    margin-top:20px ;
     color: white;
 }
 
@@ -240,6 +246,35 @@ margin-right: -50%;
     color: white;
     margin: 30px;
 }
+
+.iframe-container{
+    position: relative;
+}
+.iframe-overlay{
+    background: rgba(0, 0, 0, 0.76);
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iframe-overlay h1 {
+    font-size: 200px;
+    color: gold;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease all;
+    border-radius: 10px;
+    padding: 10px;
+}
+.iframe-overlay h1:hover {
+    background: rgba(255, 255, 224, 0.425);
+}
+
 .pricing-cards{
     display: flex;
     justify-content: center;
@@ -384,7 +419,7 @@ margin-right: -50%;
     flex-direction: column;
 }
 
-@keyframes floating {
+@keyframes fsloating {
     0% { transform: translate(0,  0px); }
     20%  { transform: translate(5px, 15px); }
     40%  { transform: translate(-12px, 20px); }
@@ -398,9 +433,8 @@ margin-right: -50%;
     nav{
         flex-direction: column;
         height: 100%;
-        justify-content: center;
-        align-items: center;
         width: 100%;
+        overflow: hidden;
     }
     .cloud-container i {
         display: block !important;    
@@ -408,8 +442,7 @@ margin-right: -50%;
     .cloud-container {
         width: 100%;
         display: flex;
-        justify-content: flex-start;
-        height: 20vh;
+        height: 18vh;
     }
 
     .menu-items {
@@ -427,22 +460,101 @@ margin-right: -50%;
         flex-direction: column;
         height: 80%;
     }
+    .menu-items li {
+        color: black !important;
+    }
     .menu-items a {
         height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #eceff157;
+        background: #eceff1ef;
         border: 1px solid black;
+        text-decoration: none;
+        transition: ease-in-out .5s all;
     }
+
     .menu-items a:hover {
-        background:rgb(4, 67, 139);
+        background:rgba(123, 179, 243, 0.836);
     }
     .nav-options{
         display: block;
     }
     .cloud{ 
         width: 50vw !important;
+    }
+
+    /*  */
+    #hero-page{
+        display: block;
+        padding-top: 100px;
+        height: fit-content;
+        overflow: hidden;
+        margin-bottom: -100px;
+    }
+    .hero-text{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-text h1{
+        font-size: 70px;
+    }
+
+    .hero-image{
+        height: 500px;
+        margin-top: -150px;
+    }
+    .awards {
+        flex-direction: column;
+    }
+    .award-content{
+        width: 100%;
+        margin: 20px;
+        margin-top: 50px;
+    }
+
+    /* Demo Page */
+    .demo-contents {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .demo-image img:nth-child(1){
+        width: 200px;
+        margin-top: -100px;
+
+    }
+    .demo-image img:nth-child(2){
+        width: 150px;
+        margin-top: -100px;
+    }
+    .demo-text{
+        margin-right: 0%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .demo-text h2 {
+        text-align: center;
+        font-size: 70px;
+    }
+    .try-now {
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+    }
+
+    .form-container form {
+        width: 100%;
+    }
+
+    #footer{
+        height: 20vh;
     }
 }
