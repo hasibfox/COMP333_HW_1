@@ -70,7 +70,7 @@ nav {
     align-items: center;
 }
 .menu-items li {
-    font-size: 25px;
+    font-size: 20px;
     color: rgb(255, 239, 100);
     transition: all .5s ease-in-out;
     cursor: pointer;
@@ -281,7 +281,9 @@ margin-right: -50%;
 .iframe-overlay h1:hover {
     background: rgba(255, 255, 224, 0.425);
 }
-
+#pricing-page{
+    margin-top: 20px;
+}
 .pricing-cards{
     display: flex;
     justify-content: center;
