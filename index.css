@@ -111,7 +111,8 @@ nav {
     grid-row: 2;
     margin-top: 30px;
 }
-.demo-text button{
+
+.demo-text button, .hero-text button{
     cursor: pointer;
     font-size: 25px;
     font-weight: bolder;
@@ -121,6 +122,7 @@ nav {
     padding: 20px;
     background: rgb(238, 222, 0);
     border: 1px solid;
+    margin-top: 20px;
 }
 .hero-image button:hover{
     color: #337def;
@@ -211,7 +213,6 @@ margin-right: -50%;
 
 #demo-page{
     overflow: hidden;
-    background: red;
     height: fit-content;
 }
 .demo-contents{
@@ -221,6 +222,7 @@ margin-right: -50%;
 }
 .demo-image {
     display: flex;
+    align-items: center;
     flex-direction: column;
     padding: 20px;
 }
@@ -236,7 +238,11 @@ margin-right: -50%;
     animation: floating 10s 2s infinite alternate-reverse;
 }
 .demo-text{
-    background: ghostwhite;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
 }
 
 .demo-text h2{
@@ -244,7 +250,6 @@ margin-right: -50%;
     font-weight: bold;
     text-align: right;
     color: white;
-    background: firebrick;
 }
 
 .iframe-container{
@@ -302,9 +307,9 @@ margin-right: -50%;
     -moz-box-shadow:    0px 0px 18px 6px rgb(167, 166, 165);
     box-shadow:         0px 0px 18px 6px rgb(223, 221, 196);
 }
+
 .card img{
     height: 150px;
-    
 }
 .card-tier{
     font-size: 40px;
@@ -331,7 +336,6 @@ margin-right: -50%;
 }
 .card ul{
     list-style-type: square;
-    margin: 20px;
 }
 .card li {
     font-size: 20px;
@@ -354,16 +358,16 @@ margin-right: -50%;
     bottom: 0;
 }
 #contact-page{
-    height: 100vh;
+    height: fit-content;
 }
 .form-container {
-    height: 90%;
-    width: 100%;
     text-align: center;
     padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 90vh;
+
 }
 .form-container h2{
     color: #337def;
@@ -383,6 +387,7 @@ margin-right: -50%;
     -moz-box-shadow:    0px 0px 18px 6px rgb(167, 166, 165);
     box-shadow:         0px 0px 18px 6px rgb(223, 221, 196);
 }
+
 .contact-inputs {
     display: flex;
     justify-content: center;
@@ -421,7 +426,7 @@ margin-right: -50%;
 }
 
 #footer{
-    height: 10vh;
+    height: 100px;
     background: black;
     border-top: 1px white solid;
     font-size: 15px;
@@ -540,10 +545,14 @@ margin-right: -50%;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
+    }
+    .demo-image {
+        height: fit-content;
+        align-items: center !important;
     }
     .demo-image img:nth-child(1){
         width: 200px;
+        margin-top: -100px;
     }
     .demo-image img:nth-child(2){
         width: 150px;
@@ -563,31 +572,61 @@ margin-right: -50%;
         font-size: 70px;
         margin: 0px;
     }
-    .try-now {
-        text-align: center;
-        margin-top: 0;
-    }
+
 
     .iframe-start{
-        font-size: 50px !important;
+        font-size: 70px !important;
     }
     .form-container form {
         width: 100%;
     }
 
-    #footer{
-        height: 20vh;
+    .card {
+        margin: 20px;
+    }
+
+    .price-text {
+        margin-top: 30px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .try-now{
-        width: 100%;
-    }
+
     .award-content img {
         height: 120px;
     }
     .demo-image img:nth-child(1){
         margin-top: 200px;
     }
+    .form-container {
+
+        height: fit-content;
+    
+    }
+    #footer {
+        height: 200px;
+    }
+    .contact-inputs {
+        display: block;
+    }
+    .contact-inputs input {
+        margin: 10px;
+        margin-left: 0;
+    }
+    .contact-inputs input:nth-child(2) {
+        margin-bottom: 30px;
+    }
+    .form-container textarea {
+        height: 30vh;
+    }
+
+    .card {
+        margin-top: 0px;
+
+    }
+
+    .price-text {
+        bottom: 70px;
+    }
+
 }
