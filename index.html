@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links for CSS file, icon, and animation CDNs -->
     <link rel="stylesheet" href="index.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>MP Pro</title>
+    <title>Music Player Pro</title>
 </head>
 <body>
+    <!-- Button to scroll to the top -->
     <div class="up">
         <a href="#nav">
             <i class="fa-solid fa-arrow-up"></i>
         </a>
     </div>
 
+<!-- Completely Responsive navigation bar that creates a hamburger menu when screen minimized -->
     <nav id="nav" role="navigation">
         <div class="cloud-container" data-aos="fade-in" data-aos-duration="2000">
             <i class="fa fa-solid fa-bars" id ="burger"></i>
@@ -40,6 +43,7 @@
         </div>
     </nav> 
         
+    <!-- A hero page meant to be clean and catch the users eye in hopes that they move down in the page-->
     <div id="hero-page" role="hero-page">
         <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
             <h1> Music Player Pro</h1>
@@ -52,6 +56,7 @@
         </div>
     </div>  
 
+    <!-- About page with some generic information including hypothetical rewards -->
     <div id="about-page" role="about-page">
         <h1 data-aos="fade-down" class="header-title ">About Us!</h1>
         <p data-aos="fade-up">
@@ -80,6 +85,7 @@
         </div>
     </div>
 
+    <!-- Features section that highlights expected product features, simple icon and title -->
     <div id="features-page" role="feaure-page">
         <h1 data-aos="fade-down" class="header-title ">MP Features</h1>
         <div class="features-card-container">
@@ -96,17 +102,22 @@
                 <h1>Audio Optimization</h1>
             </div>
             <div class="features-card" data-aos="fade-down" >
-                <i class="fa-solid fa-list"></i>                <h1>Auto-Suggestions</h1>
+                <i class="fa-solid fa-list"></i
+                    h1>Auto-Suggestions</h1>
             </div>
             <div class="features-card" data-aos="fade-down" >
-                <i class="fa-solid fa-universal-access"></i>                <h1>Accessibility</h1>
+                <i class="fa-solid fa-universal-access"></i>
+                <h1>Accessibility</h1>
             </div>
             <div class="features-card" data-aos="fade-down" >
-                <i class="fa-solid fa-share-from-square"></i>                <h1>Multi-sharing</h1>
+                <ih1 class="fa-solid fa-share-from-square"></i
+                    h1>Multi-sharing</h1>
             </div>
             
         </div>
     </div>
+
+    <!-- Demo page with an iframe leading to second html page where the actual music player app would supposedly be -->
     <div id="demo-page" role="demo-page">
         <h1 data-aos="fade-down" class="header-title ">Demo</h1>
         <div class="demo-contents" >
@@ -128,6 +139,7 @@
         </div> 
     </div>   
 
+    <!-- Pricing tiers for each product -->
     <div id="pricing-page" role="pricing-page">
         <h1 data-aos="fade-down" class="header-title ">Pricing</h1>
         <div class="pricing-cards">
@@ -176,6 +188,7 @@
         </div>
     </div> 
 
+    <!-- A contact page with a simple first name, last name, and message input boxes -->
     <div id="contact-page" role="contact-page">
         <h1 data-aos="fade-down" class="header-title ">Contact Us</h1>
         <div class="form-container" data-aos="fade-up">
@@ -202,7 +215,7 @@
         </div>
 
     </div>
-    
+    <!-- Footer that describes that this is for the class -->
     <div id="footer" role="footer">
         <p>This site was designed and published as part of the COMP
             333 Software Engineering class at Wesleyan University. The described platform is not publicly
@@ -213,6 +226,7 @@
     </div>
 
 </body>
+<!-- JS scripts for icons and animations -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://kit.fontawesome.com/425a808d24.js" crossorigin="anonymous"></script>
 <script>AOS.init();</script>
