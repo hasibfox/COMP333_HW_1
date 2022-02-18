@@ -320,7 +320,7 @@ margin-right: -50%;
     justify-content: center;
     align-items: center;
 }
-.iframe-overlay h1, .iframe-overlay a {
+.iframe-overlay h1, .iframe-overlay a, .iframe-overlay a:active, .iframe-overlay a:focus {
     font-size: 200px;
     color: gold;
     font-weight: bolder;
@@ -329,10 +329,10 @@ margin-right: -50%;
     transition: .5s ease all;
     border-radius: 10px;
     padding: 10px;
-}
-.iframe-overlay a {
     font-size: 100px;
+
 }
+
 .iframe-overlay h1:hover {
     background: rgba(255, 255, 224, 0.425);
 }
@@ -550,7 +550,7 @@ margin-right: -50%;
     .menu-items li {
         color: black !important;
     }
-    .menu-items a {
+    .menu-items a, .menu-items a:active, .menu-items a:focus {
         height: 100%;
         width: 100%;
         display: flex;
