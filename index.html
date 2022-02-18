@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>MP Pro</title>
 </head>
 <body>
+    <div class="up">
+        <a href="#nav">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
 
     <nav id="nav">
         <div class="cloud-container" data-aos="fade-in" data-aos-duration="2000">
@@ -28,6 +32,7 @@
             <ul>
                 <a href="#hero-page"> <li>Home</li></a>
                 <a href="#about-page"> <li>About</li></a>
+                <a href="#features-page"> <li>Features</li></a>
                 <a href="#demo-page"> <li>Demo</li></a>
                 <a href="#pricing-page"> <li>Pricing</li></a>
                 <a href="#contact-page"> <li>Contact Us</li></a>
@@ -36,13 +41,13 @@
     </nav> 
         
     <div id="hero-page">
-        <div class="hero-text animate__animated animate__bounceInLeft">
+        <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
             <h1> Music Player Pro</h1>
             <h2> A new way to listen to music</h2>
             <button > Learn More </button>
 
         </div>
-        <div class="hero-image animate__animated animate__slideInRight">
+        <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
             <img alt="hero-image" src="./images/hero-image.svg"/>
         </div>
     </div>  
@@ -50,11 +55,13 @@
     <div id="about-page">
         <h1 data-aos="fade-down" class="header-title ">About Us!</h1>
         <p data-aos="fade-up">
-            The standard Lorem Ipsum passage, used since the 1500s
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            Music Player Pro is platform where you can add music to your personalized playlists and then share it to the world! We allow people to create reviews, write rating from a scale from 1 to 5, and import new songs that they believe should be expressed to the world!
 
-            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            <br><br>
+            Our team uses state of the art algorithms to report proper playlist suggests and new songs based on the user profile information. For our techniques, we have received multiple awards that range from being amongst the Top 100 Tech Starts of 2022s to Top 25 Entertainment Software in US. 
+            <br><br>
+
+            We offer our products in over 200 different language and have customer support and technical management all over the world 24/7. If you have any question or concerns about your account or would like to see new features to the platform, please reach out to us <a href="#contact-page">here</a>!
         </p>
         <div class="awards">
             <div class="award-content" data-aos="flip-left" data-aos-duration="2000">
@@ -73,6 +80,33 @@
         </div>
     </div>
 
+    <div id="features-page">
+        <h1 data-aos="fade-down" class="header-title ">MP Features</h1>
+        <div class="features-card-container">
+            <div class="features-card" data-aos="fade-down" >
+                <i class="fa-solid fa-person"></i>
+                <h1>Personalization</h1>
+            </div>
+            <div class="features-card" data-aos="fade-down" >
+                <i class="fa-solid fa-download"></i>
+                <h1>Instant Downloads</h1>
+            </div>
+            <div class="features-card" data-aos="fade-down" >
+                <i class="fa-solid fa-sliders"></i>
+                <h1>Audio Optimization</h1>
+            </div>
+            <div class="features-card" data-aos="fade-down" >
+                <i class="fa-solid fa-list"></i>                <h1>Auto-Suggestions</h1>
+            </div>
+            <div class="features-card" data-aos="fade-down" >
+                <i class="fa-solid fa-universal-access"></i>                <h1>Accessibility</h1>
+            </div>
+            <div class="features-card" data-aos="fade-down" >
+                <i class="fa-solid fa-share-from-square"></i>                <h1>Multi-sharing</h1>
+            </div>
+            
+        </div>
+    </div>
     <div id="demo-page">
         <h1 data-aos="fade-down" class="header-title ">Demo</h1>
         <div class="demo-contents" >
@@ -82,7 +116,7 @@
             </div>
             <div class="demo-text" data-aos="ade-up-left" data-aos-duration="1500">
                 <h2>Try The Demo Now!</h2>
-                <button> Click Here!</button>
+                <a href="#demo"><button> Click Here!</button></a>
             </div>
         </div>
         

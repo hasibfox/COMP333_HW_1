@@ -13,7 +13,29 @@ html {
 body{
     background: #337def;
 }
-
+.up{
+    position: fixed;
+    z-index: 5000;
+    background: ghostwhite;
+    height: 50px;
+    width: 50px;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s all ease;
+    cursor: pointer;
+}
+.up i {
+    font-size: 25px;
+    color: green;
+}
+.up:hover {
+    background-color: rgb(0, 0, 0);
+    color:white !important;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -124,6 +146,9 @@ nav {
     border: 1px solid;
     margin-top: 20px;
 }
+.demo-text button{
+    width: 100%;
+}
 .hero-image button:hover{
     color: #337def;
     background: #fcc729;
@@ -210,7 +235,36 @@ margin-left: -50%;
 left: 0.5em;
 margin-right: -50%;
 }
+#features-page {
+    height: fit-content;
+    padding: 20px;
+}
+.features-card-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+.features-card{
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    padding: 30px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 18px 6px rgb(247, 247, 247);
+    -moz-box-shadow:    0px 0px 18px 6px rgb(247, 247, 247);
+    box-shadow:         0px 0px 18px 6px rgb(247, 247, 247);
+    margin: 30px;
+}
+.features-card i {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+.features-card h1 {
+    color: white;
 
+}
 #demo-page{
     overflow: hidden;
     height: fit-content;
@@ -266,7 +320,7 @@ margin-right: -50%;
     justify-content: center;
     align-items: center;
 }
-.iframe-overlay h1, a {
+.iframe-overlay h1, .iframe-overlay a {
     font-size: 200px;
     color: gold;
     font-weight: bolder;
@@ -447,6 +501,16 @@ margin-right: -50%;
     100%   { transform: translate(0, -0px); }   
 }
 
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        left: 0%;
+    }
+    100%{
+        opacity: 1;
+        left: 0;
+    }
+}
 
 /* Navbar Mobile Responsive */
 @media screen and (max-width: 768px) {
@@ -458,7 +522,8 @@ margin-right: -50%;
         overflow: hidden;
     }
     .cloud-container i {
-        display: block !important;    
+        display: block !important;   
+        top: 20%;
     }
     .cloud-container {
         width: 100%;
@@ -475,7 +540,8 @@ margin-right: -50%;
         transition: .5s all ease;
     }  
     .toggle{
-        left: 0%;
+        animation: fadeIn .5s forwards;
+        
     }
     .menu-items ul {
         flex-direction: column;
@@ -499,7 +565,7 @@ margin-right: -50%;
     }
 
     .menu-items a:hover {
-        background:rgba(123, 179, 243, 0.836);
+        background:rgba(123, 179, 243, 0.918);
     }
     .nav-options{
         display: block;
@@ -589,15 +655,21 @@ margin-right: -50%;
     .price-text {
         margin-top: 30px;
     }
+
+    .features-card{
+        margin: 10px;
+        margin-bottom: 40px;
+        padding: 10px;
+    }
+    .features-card i {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 480px) {
 
     .award-content img {
         height: 120px;
-    }
-    .demo-image img:nth-child(1){
-        margin-top: 200px;
     }
     .form-container {
 
@@ -625,10 +697,12 @@ margin-right: -50%;
         margin-top: 0px;
 
     }
+    .demo-text button, .hero-text button{
+        width: 100%;
+    }
 
     .price-text {
         bottom: 70px;
     }
 
 }
-
