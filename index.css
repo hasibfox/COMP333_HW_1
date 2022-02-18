@@ -284,6 +284,7 @@ margin-right: -50%;
 }
 #pricing-page{
     margin-top: 20px;
+    overflow: hidden;
 }
 .pricing-cards{
     display: flex;
