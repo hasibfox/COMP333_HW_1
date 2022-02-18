@@ -667,7 +667,9 @@ margin-right: -50%;
 }
 
 @media screen and (max-width: 480px) {
-
+    .iframe-overlay a {
+        font-size: 60px;
+    }
     .award-content img {
         height: 120px;
     }

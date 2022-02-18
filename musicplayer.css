@@ -42,6 +42,17 @@ body{
     margin: 10px;
 }
 
+.mp-content {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mp-content h1 {
+    font-size: 50px;
+}
+
 @keyframes move {
     0%{
         margin: 0px;
