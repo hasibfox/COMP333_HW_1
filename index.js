@@ -12,6 +12,7 @@ burger.addEventListener("click", () => {
     }
 })
 
+console.log()
 start.addEventListener("click", () => {
     let overlay = document.querySelector(".iframe-overlay");
     overlay.style.display = "none";
@@ -29,7 +30,7 @@ start.addEventListener("click", () => {
             a.appendChild(link); 
                 
             // Set the href property.
-            a.href = "/musicplayer.html"; 
+            a.href = `musicplayer.html`; 
                 
             a.target = "_blank"
             // Append the anchor element to the body.
